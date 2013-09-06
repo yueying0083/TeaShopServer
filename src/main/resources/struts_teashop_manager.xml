@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="teashop-manager" extends="teashop-default" namespace="/manager">
+		<interceptors>
+			<interceptor name="authenticationInterceptor" class="cn.yueying.teashop.interceptor.AuthInterceptor" />
+			<interceptor-stack name="defualtSecurityStackWithAuthentication">
+				<interceptor-ref name="defaultStack" />
+				<interceptor-ref name="authenticationInterceptor" />
+			</interceptor-stack>
+		</interceptors>
+		<default-interceptor-ref name="defualtSecurityStackWithAuthentication" />
+		
+		<action name="index" class="cn.yueying.teashop.action.manager.IndexAction">
+		    <result name="success">success.jsp</result>
+		</action>
+		
+	</package>
+</struts>

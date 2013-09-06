@@ -1,0 +1,434 @@
+/* ----------------------------------------------------
+Copyright © 2011-2012 UlikeBeauty. All Rights Reserved.
+------------------------------------------------------*/
+/* ------------------------
+TaokeItem__pic_fence_start.
+--------------------------*/
+.error_input {
+	border: 2px;
+	border-color: #FF0000;
+}
+
+.taobao_pic_fence {
+	width: 100%;
+	height: 100% font-family:      'Times New Roman', '微软雅黑';
+}
+
+.taobao_pic_fence ul {
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.taobao_pic_fence .item {
+	width: 170px;
+	height: 300px;
+	float: left;
+	margin: 0 8px 0 8px;
+	text-align: center;
+	float: left;
+}
+
+.taobao_pic_fence .item .div {
+	width: 160px;
+	padding: 10px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.taobao_pic_fence .item .div:hover {
+	background-color: #ccc;
+}
+
+.taobao_pic_fence .item .div .pic {
+	width: 160px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .pic img {
+	width: 155px;
+	height: 155px;
+}
+
+.taobao_pic_fence .item .div .click_url {
+	width: 160px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .click_url .click_url_a {
+	font-size: 15px;
+}
+
+.taobao_pic_fence .item .div .click_url .click_url_a .H {
+	color: red;
+}
+
+.taobao_pic_fence .item .div .price_commission_li {
+	width: 150px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .price_commission_li {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 0;
+}
+
+.taobao_pic_fence .item .div .price_commission_li .price {
+	width: 70px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .price_commission_li .price em {
+	display: block;
+	background-position: -5px -81px;
+	color: #FF2900;
+	font: bold 16px Arial;
+	padding-left: 16px;
+	background-image: url(../../resources/images/taobao.png);
+	background-repeat: no-repeat;
+}
+
+.taobao_pic_fence .item .div .price_commission_li .commission {
+	width: 30px;
+	float: right;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .button {
+	display: none;
+	width: 160px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+	list-style: none;
+}
+
+.taobao_pic_fence .item .div .button .view {
+	width: 50px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .button .delete {
+	width: 50px;
+	float: right;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div .button .verify {
+	width: 50px;
+	float: left;
+	margin: -1px 0 0 5px;
+	text-align: center;
+}
+
+.taobao_pic_fence .item .div:hover .button {
+	display: block;
+}
+/* ----------------------
+TaokeItem__pic_fence_end.
+------------------------*/
+/* --------------
+Click_goto_start.
+----------------*/
+.goto {
+	width: 250px;
+	height: 100px;
+	padding: 0 10px 0 10px;
+	background-color: #FFF;
+	overflow: hidden;
+}
+
+.goto .goto_ul {
+	width: 230px;
+	height: 100px;
+	float: left;
+	margin: 0 8px 0 8px;
+	text-align: center;
+}
+
+.goto .goto_ul .title {
+	width: 230;
+	float: left;
+	margin: 0 0 0 -1px;
+	text-align: center;
+}
+
+.goto .goto_ul .click_item {
+	width: 115px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+
+.goto .goto_ul .click_item ul {
+	width: 85px;
+	float: left;
+	margin: 15px 15px 15px 15px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.goto .goto_ul .click_item ul:hover {
+	background-color: #ccc;
+}
+/* ------------
+Click_goto_end.
+--------------*/
+
+/*
+   content
+*/
+#content {
+	padding: 0;
+	min-height: 100%;
+	clear: both;
+	overflow: hidden;
+}
+
+#content div.box {
+	padding: 0 0 10px 0;
+	clear: both;
+	overflow: hidden;
+	background: #ffffff;
+}
+
+#content div.box div.title {
+	margin: 0 0 20px 0;
+	padding: 0;
+	clear: both;
+	overflow: hidden;
+	background: #336699 url("../../resources/images/colors/blue/title.png")
+		repeat-x;
+}
+
+#content div.box div.title h1,#content div.box div.title h2,#content div.box div.title h3,#content div.box div.title h4,#content div.box div.title h5,#content div.box div.title h6
+	{
+	margin: 0;
+	padding: 11px 0 11px 10px;
+	float: left;
+	border: none;
+	color: #ffffff;
+}
+
+#content div.box div.title div.search {
+	margin: 10px;
+	padding: 6px 6px 6px 7px;
+	float: right;
+	background: url("../../resources/images/colors/blue/title_link.png")
+		no-repeat top left;
+	border-left: 1px solid #316293;
+}
+
+#content div.box div.title div.search div.price {
+	float: left;
+}
+
+#content div.box div.title div.search div.price span.label {
+	margin-left: 10px;
+	padding: 10px 0 10px 10px;
+	color: #EEEEEE;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: 微软雅黑, Verdana, Helvetica, Sans-Serif;
+	cursor: pointer;
+}
+
+#content div.box div.title div.search div.price input.start_price {
+	margin: 0;
+	padding: 5px 7px 4px 7px;
+	background: #FFFFFF;
+	border: 1px solid #316293;
+	color: #000000;
+	font-family: Lucida Grande, Verdana, Lucida Sans Regular,
+		Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 11px;
+	size: 20px;
+}
+
+#content div.box div.title div.search div.price input.end_price {
+	margin: 0;
+	padding: 5px 7px 4px 7px;
+	background: #FFFFFF;
+	border: 1px solid #316293;
+	color: #000000;
+	font-family: Lucida Grande, Verdana, Lucida Sans Regular,
+		Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 11px;
+	size: 20px;
+}
+
+#content div.box div.title div.search div.sort {
+	float: left;
+}
+
+#content div.box div.title div.search div.sort span {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	color: #EEEEEE;
+	font-size: 1em;
+	font-weight: normal;
+	font-family: 微软雅黑, Verdana, Helvetica, Sans-Serif;
+	cursor: pointer;
+}
+
+#content div.box div.title div.search div.sort span .s-nav-tab {
+	color: #EEEEEE;
+	display: inline-block;
+	font-family: '宋体', 宋体, Microsoft YaHei, sans-serif;
+	font-size: 12px;
+	font-weight: normal;
+	margin-right: 6px;
+	padding: 0 0 5px;
+}
+
+#content div.box div.title div.search div.sort span .s-nav-tab-span {
+	display: inline-block;
+	margin-right: 6px;
+}
+
+#content div.box div.title div.search div.sort span .s-nav-tab:hover {
+	color: gray;
+}
+
+#content div.box div.title div.search div.sort span .s-nav-tab.current {
+	color: gray;
+	cursor: default;
+}
+
+#content div.box div.title div.search div.input {
+	float: left;
+}
+
+#content div.box div.title div.search div.input input {
+	margin: 0;
+	padding: 5px 7px 4px 7px;
+	background: #FFFFFF;
+	border: 1px solid #316293;
+	color: #000000;
+	font-family: Lucida Grande, Verdana, Lucida Sans Regular,
+		Lucida Sans Unicode, Arial, sans-serif;
+	font-size: 11px;
+}
+
+#content div.box div.title div.search div.button {
+	float: left;
+}
+
+#content div.box div.title div.search div.button input {
+	margin: 0;
+	color: #000000;
+	font-size: 1.0em;
+	font-weight: bold;
+	font-family: Verdana, Helvetica, Sans-Serif;
+}
+/*content end*/
+
+/*pagination*/
+#content div.box div.pagination {
+	margin: 10px 0 0 0;
+	padding: 0;
+	height: 30px;
+	clear: both;
+	overflow: hidden;
+}
+
+#content div.box div.pagination div.results {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	float: left
+}
+
+#content div.box div.pagination div.results span {
+	margin: 0;
+	padding: 6px 8px 6px 8px;
+	height: 30px;
+	display: block;
+	float: left;
+	background: #ebebeb url("../../resources/images/pager.png") repeat-x;
+	border-top: 1px solid #dedede;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+	color: #4A4A4A;
+	font-weight: bold;
+}
+
+#content div.box div.pagination ul.pager {
+	margin: 0;
+	padding: 0;
+	float: right;
+	text-align: right;
+}
+
+#content div.box div.pagination ul.pager li {
+	margin: 0 0 0 4px;
+	padding: 0;
+	height: 30px;
+	float: left;
+	list-style: none;
+	background: #ebebeb url("../../resources/images/pager.png") repeat-x;
+	border-top: 1px solid #dedede;
+	border-left: 1px solid #cfcfcf;
+	border-right: 1px solid #c4c4c4;
+	border-bottom: 1px solid #c4c4c4;
+	color: #4A4A4A;
+	font-weight: bold;
+}
+
+#content div.box div.pagination ul.pager li.separator {
+	padding: 6px;
+}
+
+#content div.box div.pagination ul.pager li.current {
+	padding: 6px;
+	background: #b4b4b4 url("../../resources/images/pager_selected.png")
+		repeat-x;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #b1b1b1;
+	border-bottom: 1px solid #afafaf;
+	color: #515151;
+}
+
+#content div.box div.pagination ul.pager li.disabled {
+	padding: 6px;
+	color: #B4B4B4;
+}
+
+#content div.box div.pagination ul.pager li span {
+	margin: 0;
+	padding: 6px;
+	height: 30px;
+	display: block;
+	float: left;
+	color: #515151;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+#content div.box div.pagination ul.pager li span:hover {
+	margin: -1px;
+	background: #b4b4b4 url("../../resources/images/pager_selected.png")
+		repeat-x;
+	border-top: 1px solid #cccccc;
+	border-left: 1px solid #bebebe;
+	border-right: 1px solid #b1b1b1;
+	border-bottom: 1px solid #afafaf;
+}
+/*pagination end*/

@@ -1,0 +1,65 @@
+/* ----------------------------------------------------
+Copyright © 2011-2012 UlikeBeauty. All Rights Reserved.
+------------------------------------------------------*/
+/* -------------------
+Ulike_suggestin_start.
+--------------------*/
+#content .box .suggestion {
+	padding: 10px;
+	width: 960px;
+}
+
+#content .box .suggestion .items {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+#content .box .suggestion .items .item {
+	width: 924px;
+	float: left;
+}
+
+#content .box .suggestion .items .item:hover {
+	background-color: #ccc;
+}
+
+#content .box .suggestion .items .item .index {
+	width: 50px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+	overflow: hidden;
+}
+
+#content .box .suggestion .items .item .index span {
+	display: block;
+	font-family: 'Times New Roman', '微软雅黑';
+	font: bold 1.3em;
+	padding-left: 16px;
+}
+
+#content .box .suggestion .items .item .suggestion {
+	width: 680px;
+	float: left;
+	margin: -1px 0 0 -1px;
+}
+
+#content .box .suggestion .items .item .suggestion span {
+	text-indent: 2em;
+	display: block;
+	font-family: 'Times New Roman', '微软雅黑';
+	font: bold 1.3em;
+	padding-left: 16px;
+	font-color: #000000;
+}
+
+#content .box .suggestion .items .item .conn {
+	width: 154px;
+	float: left;
+	margin: -1px 0 0 -1px;
+	text-align: center;
+}
+/* -----------------
+Ulike_suggestin_end.
+------------------*/

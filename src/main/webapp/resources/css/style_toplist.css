@@ -1,0 +1,264 @@
+.rank_r {
+	float: right;
+	width: 100%;
+}
+
+.rank_title {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	background: url("../../resources/images/rank_bg.png") repeat-x scroll 0
+		-42px transparent;
+	border-color: #D9D6D6 #D9D6D6 -moz-use-text-color;
+	border-image: none;
+	border-style: solid solid none;
+	border-width: 1px 1px medium;
+	height: 39px;
+	line-height: 39px;
+	padding-left: 18px;
+}
+
+.rank_title h1,.rank_title h3 {
+	background: url("../../resources/images/rank_bg.png") no-repeat scroll 0
+		-135px transparent;
+	font-size: 14px;
+	font-weight: bold;
+	padding-left: 15px;
+}
+
+.rank_all {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: #E0E0E0 -moz-use-text-color -moz-use-text-color #E0E0E0;
+	border-image: none;
+	border-style: solid none none solid;
+	border-width: 1px 0 0 1px;
+}
+
+.rank_all td,.rank_all th {
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-top-colors: none;
+	border-color: -moz-use-text-color #E0E0E0 #E0E0E0 -moz-use-text-color;
+	border-image: none;
+	border-right: 1px solid #E0E0E0;
+	border-style: none solid solid none;
+	border-width: 0 1px 1px 0;
+	height: 32px;
+	line-height: 32px;
+}
+
+.rank_all th {
+	background: none repeat scroll 0 0 #F1F1F1;
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.rank_all td {
+	color: #666666;
+	font-size: 13px;
+	padding: 0 10px;
+}
+
+.rank_all td a {
+	color: #2593C6;
+	margin-right: 10px;
+}
+
+.rank_all td span a {
+	color: #2674AF;
+	font-size: 14px;
+	margin-right: 20px;
+}
+
+.rank_all td a:hover,.rank_all td span a:hover {
+	color: #FD5151;
+}
+
+.rank_all td.txt {
+	color: #FF6600;
+	font-weight: bold;
+}
+
+.rank_all td em a {
+	color: #666666;
+	margin: 0;
+}
+
+.rank_all td em a:hover {
+	color: #FD5151;
+}
+
+.rank_up,.rank_up1 {
+	background: url("../../resources/images/rank_bg.png") no-repeat scroll
+		-43px -96px transparent;
+	display: block;
+	height: 9px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 9px;
+}
+
+.rank_down,.rank_down1 {
+	background: url("../../resources/images/rank_bg.png") no-repeat scroll
+		-31px -96px transparent;
+	display: block;
+	height: 9px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 9px;
+}
+
+.rank_flat,.rank_flat1 {
+	background: url("../../resources/images/rank_bg.png") no-repeat scroll
+		-56px -96px transparent;
+	display: block;
+	height: 9px;
+	margin: 0 auto;
+	overflow: hidden;
+	width: 9px;
+}
+
+.ranking {
+	background: url("../../resources/images/rank_bg.png") repeat-x scroll 0
+		-284px #FFFFFF;
+	border: 1px solid #E0E0E0;
+	float: left;
+	padding: 10px 15px;
+	width: 300px;
+}
+
+.rank_rm {
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.ranking h4 {
+	background: url("../../resources/images/rank_bg.png") no-repeat scroll 0
+		-168px transparent;
+	color: #414141;
+	display: block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 30px;
+	line-height: 30px;
+	padding-left: 15px;
+}
+
+.ranking h4 span {
+	background: url("../../resources/images/rank_bg.png") no-repeat scroll 0
+		-111px transparent;
+	display: block;
+	float: right;
+	font-size: 12px;
+	font-weight: normal;
+	height: 23px;
+	line-height: 23px;
+	width: 69px;
+}
+
+.ranking h4 span a {
+	color: #FFFFFF;
+	display: block;
+	height: 23px;
+	text-align: center;
+	width: 69px;
+}
+
+.ranking h4 span a:hover {
+	color: #FFFFFF;
+	text-decoration: underline;
+}
+
+.ranking ul {
+	padding-top: 5px;
+	padding-left: 15px;
+}
+
+.ranking li {
+	border-bottom: 1px dotted #BEBEBE;
+	font-size: 14px;
+	height: 30px;
+	line-height: 30px;
+	list-style-type: none;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	position: relative;
+	text-align: left;
+}
+
+.ranking li a {
+	color: #2674AF;
+	float: left;
+	padding-left: 30px;
+}
+
+.ranking li .rank_xq {
+	float: right;
+	font-size: 13px;
+	text-align: right;
+	width: 60px;
+}
+
+.ranking li .rank_xq a {
+	color: #999999;
+	float: none;
+}
+
+.ranking li a:hover,.ranking li .rank_xq a:hover {
+	color: #FD5151;
+}
+
+.rank_up1,.rank_down1,.rank_flat1 {
+	float: left;
+	margin: 10px 0 0;
+}
+
+.paiming_red {
+	background: url("../../resources/images/rank_bg.png") repeat-x scroll
+		-15px -93px transparent;
+	color: #FFFFFF;
+	display: inline;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	height: 15px;
+	line-height: 15px;
+	margin: 7px 5px 0 0;
+	overflow: hidden;
+	text-align: center;
+	width: 14px;
+}
+
+.paiming_blue {
+	background: url("../../resources/images/rank_bg.png") repeat-x scroll 0
+		-93px transparent;
+	color: #FFFFFF;
+	display: inline;
+	float: left;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	height: 15px;
+	line-height: 15px;
+	margin: 7px 5px 0 0;
+	overflow: hidden;
+	text-align: center;
+	width: 14px;
+}
+
+.paiming_blue_text {
+	display: inline;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: center;
+}
+
+.ranking_li_span {
+	font-size: 14px;
+	padding-left: 25px;
+}

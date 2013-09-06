@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+      "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+      "http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="teashop-default" extends="struts-default">
+		<global-results>
+			<result name="error">/error.jsp</result>
+			<result name="login" type="redirect">/</result>
+		</global-results>
+		<action name="">
+			<result>/index.jsp</result>
+		</action>
+		<action name="/">
+			<result>/index.jsp</result>
+		</action>
+		<action name="login" class="cn.yueying.teashop.action.LoginAction"
+			method="login">
+			<result name="success" type="redirect">manager/index.action</result>
+		</action>
+
+		<action name="imageAction" class="cn.yueying.teashop.action.VerifyImageAction"
+			method="createImage">
+			<result name="success" type="stream">
+				<param name="contentType">image/jpeg</param>
+				<param name="inputName">inputStream</param>
+			</result>
+		</action>
+	</package>
+</struts>
