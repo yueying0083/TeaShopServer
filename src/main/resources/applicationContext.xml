@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	<context:annotation-config />
+	<context:component-scan base-package="cn.yueying.teashop" />
+
+	<bean id="dataSource" destroy-method="close"
+		class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="com.mysql.jdbc.Driver" />
+		<property name="jdbcUrl"
+			value="jdbc:mysql://w.rdc.sae.sina.com.cn:3307/app_teashop" />
+		<property name="user" value="nmln1jnl4n" />
+		<property name="password" value="03jz1mj010my4hy1w1ix5hy53w0zhzwjj1i4m3h2" />
+		<property name="acquireIncrement" value="1"></property>
+		<property name="initialPoolSize" value="1"></property>
+		<property name="maxIdleTime" value="60"></property>
+		<property name="maxPoolSize" value="5"></property>
+		<property name="minPoolSize" value="1"></property>
+		<property name="acquireRetryDelay" value="1000"></property>
+		<property name="acquireRetryAttempts" value="60"></property>
+		<property name="breakAfterAcquireFailure" value="false"></property>
+	</bean>
+	<!-- <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource" 
+		destroy-method="close"> <property name="driverClass" value="com.mysql.jdbc.Driver"></property> 
+		<property name="jdbcUrl" value="jdbc:mysql://localhost:3306/teashop"></property> 
+		<property name="user" value="root"></property> <property name="password" 
+		value=""></property> <property name="acquireIncrement" value="1"></property> 
+		<property name="initialPoolSize" value="10"></property> <property name="maxIdleTime" 
+		value="60"></property> <property name="maxPoolSize" value="300"></property> 
+		<property name="minPoolSize" value="10"></property> <property name="acquireRetryDelay" 
+		value="1000"></property> <property name="acquireRetryAttempts" value="60"></property> 
+		<property name="breakAfterAcquireFailure" value="false"></property> </bean> -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.annotation.AnnotationSessionFactoryBean">
+		<property name="dataSource" ref="dataSource" />
+		<property name="annotatedClasses">
+			<list>
+				<value>cn.yueying.teashop.model.TeaShopManager</value>
+			</list>
+		</property>
+		<property name="hibernateProperties">
+			<value>
+				hibernate.dialect=org.hibernate.dialect.MySQLDialect
+				hibernate.show_sql=true
+				hibernate.hbm2ddl.auto=update
+				hibernate.current_session_context_class=thread
+			</value>
+		</property>
+	</bean>
+	<bean id="hibernateTemplate" class="org.springframework.orm.hibernate3.HibernateTemplate">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+</beans>  
